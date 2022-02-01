@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barishal Board Result</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
+</head>
+<body>
+    <header>
+        <div class="bg_box">
+            <div class="inside_box">
+                <a href="index.html"><img src="img/banar.png" alt="barishal board banar"></a>
+                <h1></h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bg_box">
+            <div class="inside_box">
+                <div class="top_bar">
+                    <h3>Please provide information for result</h3>
+                </div>
+                <div class="input_section">
+                    <form action="http://www.barisalboard.gov.bd/home/show_result_ssc" method="post" target="_blank">
+                        <ul>
+                            <li>
+                                <label for="exam">Examination</label>
+                                <select name="exam" id="exam" required>
+                                    <option value="ssc">SSC</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <label for="ssc_roll">Roll No</label>
+                                <input name="ssc_roll" id="ssc_roll" type="number" autocomplete="off" required placeholder="Enter your roll no" />
+                            </li>
+                            <li>
+                                <label for="ssc_reg">Registration No</label>
+                                <input name="ssc_reg" id="ssc_reg" type="number" autocomplete="off" required placeholder="Enter your registration no" />
+                            </li>
+<!--
+                            <li>
+                                <label for="hsc_dob">Center Code</label>
+                                <input name="hsc_dob" id="hsc_dob" onclick="JACS.show(this,this);" type="text" />
+                            </li>
+-->
+                            <li>
+                                <label for="ssc_ccode">Center Code</label>
+                                <input name="ssc_ccode" id="ssc_ccode" type="number" autocomplete="off" required placeholder="Your center code" />
+                            </li>
+                            <li>
+                                <label for="year">Year</label>
+                                <select name="year" id="number">
+<!--                                    <option value="2022">2022</option>-->
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input name="board" id="board" value="barisal" type="hidden" /> 
+                            </li>
+                            <li class="button">
+                                <input type="reset" value="Reset">
+                                <input type="submit" value="Get Result">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bg_box">
+            <div class="inside_box">
+                <p>Developed by Ahsan Habib</p>
+                <p><a href="mailto:arman0sheikh@gmail.com">Contact Me</a></p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
